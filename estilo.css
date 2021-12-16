@@ -1,0 +1,62 @@
+body {
+  font-size: 16px;
+  font-family: "Readex Pro", sans-serif;
+  background-image: linear-gradient(to top, #87cefa 0%, white 100%);
+}
+
+#main {
+  text-align: center;
+}
+
+#submit {
+  color: black;
+  background-color: LightBlue;
+  padding: 10px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 20px;
+  text-align: center;
+}
+
+#submit:hover {
+  cursor: pointer;
+}
+
+#survey-form fieldset {
+  border: none;
+}
+
+#name-label,
+#number-label,
+#email-label,
+#text-label {
+  color: MidnightBlue;
+  font-weight: bold;
+  margin: 15px;
+  display: block;
+}
+
+#name-label::after,
+#number-label::after,
+#email-label::after {
+  content: " *";
+}
+
+textarea {
+  height: 50px;
+}
+
+#consentimiento {
+  margin-top: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#description {
+  font-style: italic;
+}
+
+#genero-peli {
+  font-weight: bold;
+}

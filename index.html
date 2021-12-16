@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="estilo.css" rel="stylesheet" />
+    <title>Formulario de encuesta</title>
+  </head>
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <div id="main">
+      <h1 id="title">Contáctanos PQRS</h1>
+      <p id="description">
+        Bienvenido al Módulo de PQRS<br />
+        <br />
+        A través de este medio podrás presentar peticiones, quejas, reclamos o
+        sugerencias
+      </p>
+
+      <form id="survey-form">
+        <fieldset>
+          <p>Te agradecemos diligenciar la siguiente información:</p>
+          <div>
+            <label id="name-label">Nombre completo</label>
+            <input
+              id="name"
+              type="text"
+              name="nombre"
+              placeholder="Nombre"
+              required
+            />
+
+            <label id="number-label">Teléfono</label>
+            <input
+              id="number"
+              class="estilo-input"
+              type="number"
+              name="telefono"
+              placeholder="Teléfono"
+              min="7"
+              max="10"
+              required
+            />
+            <label id="email-label">Correo</label>
+            <input
+              id="email"
+              class="estilo-input"
+              type="email"
+              name="correo"
+              placeholder="Correo electrónico"
+              required
+            />
+            <label id="text-label">Mensaje:</label>
+            <textarea class="estilo-input"></textarea>
+          </div>
+
+          <label>Selecciona una categoría:</label>
+          <input
+            type="text"
+            list="dropdown"
+            required
+            pattern="[Pp]etición|[Qq]ueja|[Rr]eclamo|[Ss]ugerencia|[Ff]elicitación"
+          />
+          <datalist id="dropdown">
+            <option>Petición</option>
+            <option>Queja</option>
+            <option>Reclamo</option>
+            <option>Sugerencia</option>
+            <option>Felicitación</option>
+          </datalist>
+          <div>
+            <p id="genero-peli">Indica tu género de película favorito:</p>
+            <label><input type="checkbox" value="1_checkbox" /> Comedia</label>
+            <label><input type="checkbox" value="2_checkbox" /> Terror</label>
+            <label><input type="checkbox" value="3_checkbox" /> Infantil</label>
+            <label><input type="checkbox" value="4_checkbox" /> Drama</label>
+            <label
+              ><input type="checkbox" value="5_checkbox" /> Romántica</label
+            >
+          </div>
+
+          <p id="consentimiento">
+            En cumplimiento del Régimen de Protección Datos Personales, autorizo
+            expresamente a xxxxxx S.A.S, de manera directa, o a través de
+            terceros designados, para almacenar, consultar, procesar y en
+            general, para dar tratamiento a la información personal que
+            suministre, y para ser incluido en sus bases de datos, recibir
+            información de la Compañía, de conformidad con las políticas de
+            privacidad y manejo de información.
+          </p>
+
+          <input
+            type="radio"
+            required
+            name="consentimiento"
+            id="r1"
+            value="si"
+          /><label for="r1">Si</label>
+          <input
+            type="radio"
+            required
+            name="consentimiento"
+            id="r2"
+            value="no"
+          /><label for="r2">No</label>
+
+          <input type="submit" id="submit" value="Enviar" />
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
